@@ -1,0 +1,32 @@
+<ion-app>
+
+  <ion-menu menuId="main-menu" side="start" type="push" contentId="main">
+  <ion-header>
+    <ion-toolbar >
+      <ion-title>Dar Hnini</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        
+           
+          <ion-icon name="home-outline" style="font-size:36px;"(click)="connect()"></ion-icon>  Home
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="log-in-outline" style="font-size:36px;" (click)="gotologin()"></ion-icon>LOGIN</ion-item>
+
+      <ion-item><ion-icon name="log-out-outline" style="font-size:36px;"(click)="logout()" ></ion-icon>Log Out</ion-item>
+     
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+
+
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

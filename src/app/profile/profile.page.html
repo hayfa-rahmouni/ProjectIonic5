@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/register"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    
+      <img src="../../assets/avatar.jpg" >
+    
+    <ion-item>
+      
+      <div item-start>
+      <span> <div>Email: {{this.email}}</div>
+        <div>Name: {{this.name}}</div>
+        <div>Cell Phone: {{this.tel}}</div></span>
+    </div>
+    
+    </ion-item>
+  </ion-card>  
+   
+
+  
+  <ion-button  (click)="gotoaddpage()" >Add House</ion-button>
+  <ion-button  (click)="getitem()" >GetHouse</ion-button>
+
+  <ion-list  *ngFor="let hs of liste" >
+   
+      <ion-item>
+        <ion-label>{{hs.Description}}</ion-label>
+        <ion-button color="danger" (click)="deleteitem(hs)">delete</ion-button>
+      </ion-item>
+      </ion-list>
+      
+        
+     
+    
+  
+</ion-content>
